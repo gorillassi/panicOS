@@ -124,10 +124,6 @@ make run              # запустить в QEMU
 
 ```
 >> panicOS bootloader initializing...
-:: panicOS ::
-system integrity: COMPROMISED
-boot sequence: chaotic
-welcome, rootless entity
 ```
 
 ---
