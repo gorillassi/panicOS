@@ -76,7 +76,7 @@ user/%: user/%.o user/crt.o
 panicOS.img: mbr.bin fs.img
 	cat $^ >$@
 
-kernel.bin: kernel.o console.o drivers/vga.o drivers/uart.o solution.o
+kernel.bin: kernel.o console.o drivers/vga.o drivers/uart.o vgaout.o
 	$(LD) $(LDFLAGS) -o $@ -Ttext 0x9000 $^
 
 bootmain.o: bootmain.c
